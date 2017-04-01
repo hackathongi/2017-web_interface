@@ -33,7 +33,7 @@ $(function() {
       var action = btn.data('action');
       var device = btn.data('device');
 
-      $.get('http://192.168.4.250/devices/' + device + "/cmds/" + action, function( data ) {
+      $.get('http://tarla.hackathongi.cat/devices' + device + "/cmds/" + action, function( data ) {
         console.log( data );
         alert( "Load was performed." );
       });

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Index | Hackathoon Girona</title>
+    <title>Home | Hackathoon Girona</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
@@ -43,87 +43,8 @@
           <div class="container">
             <h2>Home modules</h2>
             <div class="row">
-              <div class="col-md-3">
-                <div class="module-button">
-                  <div class="col-md-12">
-                    <h3>Catapult</h3>
-                    <a href="modules/catapult.html"><img class="img-responsive module-img" src="img/catapult-icon.png" alt="Catapulta"/></a>
-                    <div class="cmds">
-                      <div class="col-md-12">
-                        <h4>Actions</h4>
-                        <button class="btn btn-primary action" data-action="shot" data-device="catapult">Shot</button>
-                      </div>
-                    </div>
-                    <a class="btn btn-primary" href="modules/catapult.html">More info</a>
-                    </div>
-                  </div>
-              </div><!-- end col md 3 -->
-              <div class="col-md-3">
-                <div class="module-button">
-                  <div class="col-md-12">
-                    <h3>Watering</h3>
-                    <a href="modules/watering.html"><img class="img-responsive module-img" src="img/watering-icon.png" alt="Catapulta"/></a>
-                    <div class="cmds">
-                      <div class="col-md-12">
-                        <h4>Actions</h4>
-                        <button class="btn btn-primary action" data-action="on" data-device="watering">On</button>
-                        <button class="btn btn-primary action" data-action="off" data-device="watering">Off</button>
-                        <button class="btn btn-primary action" data-action="status" data-device="watering">Status</button>
-                      </div>
-                    </div>
-                    <a class="btn btn-primary" href="modules/watering.html">More info</a>
-                    </div>
-                  </div>
-              </div><!-- end col md 3 -->
-              <div class="col-md-3">
-                <div class="module-button">
-                  <div class="col-md-12">
-                    <h3>Timeserver</h3>
-                    <a href="modules/timeserver.html"><img class="img-responsive module-img" src="img/timeserver-icon.png" alt="Catapulta"/></a>
-                    <div class="cmds">
-                      <div class="col-md-12">
-                        <h4>Actions</h4>
-                        <button class="btn btn-primary action" data-action="formatted" data-device="timeserver">Formatted</button>
-                        <button class="btn btn-primary action" data-action="timestamp" data-device="timeserver">Timestamp</button>
-                      </div>
-                    </div>
-                    <a class="btn btn-primary" href="modules/timeserver.html">More info</a>
-                    </div>
-                  </div>
-              </div><!-- end col md 3 -->
-              <div class="col-md-3">
-                <div class="module-button">
-                  <div class="col-md-12">
-                    <h3>Camera</h3>
-                    <a href="modules/camera.html"><img class="img-responsive module-img" src="img/camera-icon.png" alt="Catapulta"/></a>
-                    <div class="cmds">
-                      <div class="col-md-12">
-                        <h4>Actions</h4>
-                        <button class="btn btn-primary action" data-action="on" data-device="camera">On</button>
-                        <button class="btn btn-primary action" data-action="off" data-device="camera">Off</button>
-                        <button class="btn btn-primary action" data-action="status" data-device="camera">Status</button>
-                        <button class="btn btn-primary action" data-action="pic" data-device="camera">Pic</button>
-                      </div>
-                    </div>
-                    <a class="btn btn-primary" href="modules/camera.html">More info</a>
-                    </div>
-                  </div>
-              </div><!-- end col md 3 -->
-              <div class="col-md-3">
-                <div class="module-button">
-                  <div class="col-md-12">
-                    <h3>Announcer</h3>
-                    <a href="modules/announcer.html"><img class="img-responsive module-img" src="img/announcer-icon.png" alt="Catapulta"/></a>
-                    <div class="cmds">
-                      <div class="col-md-12">
-                        <h4>Actions</h4>
-                        <button class="btn btn-primary action" data-action="say" data-device="announcer">Say</button>
-                      </div>
-                    </div>
-                    <a class="btn btn-primary" href="modules/announcer.html">More info</a>
-                    </div>
-                  </div>
-              </div><!-- end col md 3 -->
+              <div id="list-modules">
+              </div>
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end modules-container -->
@@ -134,9 +55,9 @@
       <div class="col-md-3">
         <h4>Hackathon Girona</h4>
         <ul>
-          <li>Home</li>
-          <li>Modules</li>
-          <li>Chat</li>
+          <li><a class="links-footer" href="#">Home</a></li>
+          <li><a class="links-footer" href="#modules-container">Modules</a></li>
+          <li><a class="links-footer" href="#chat-container">Chat</a></li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -147,6 +68,6 @@
   </footer>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/script-home.js"></script>
   </body>
 </html>

@@ -5,14 +5,22 @@ h1,h2,h3,h4,a{
 p{
   font-family: monospace;
 }
+ul{
+  list-style-type: none;
+}
+a:hover,
+a:link,
+a:visited{
+  text-decoration: none;
+}
 nav#nav-menu{
-  background-color: rgb(16, 69, 181);
+  background-color: rgb(45, 90, 121);
   border: 0;
   border-radius: 0px;
 }
 footer#footer{
-  background-color: rgb(16, 69, 181);
-  color: #c5c0c0;
+  background-color:rgb(45, 90, 121);
+  color: white;
 }
 div#modules-container{
   padding-bottom: 25px;
@@ -45,11 +53,10 @@ div.module-button div.col-md-12{
 div.module-button a{
   text-transform: initial;
 }
-a.logo{
-  color: #c5c0c0 !important;
-}
-ul.menu-ul li a{
-  color: #c5c0c0 !important;
+a.logo,
+ul.menu-ul li a,
+a.links-footer{
+  color: white !important;
 }
 img.module-img{
   text-align:center;
@@ -57,9 +64,22 @@ img.module-img{
   width:30%;
   margin-bottom: 5px;
 }
-button.btn-primary{
-  margin-bottom: 5px;
-}
 nav.navbar{
   margin-bottom: 0px;
+}
+img.img-module{
+  text-align:center;
+  margin:0 auto;
+  margin-bottom:25px;
+  width: 50%;
+}
+.btn-primary{
+  border: 0;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  background-color: rgb(45, 90, 121);
+}
+.btn-primary:hover{
+  background-color: rgb(52, 110, 152);
 }

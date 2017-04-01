@@ -1,0 +1,65 @@
+h1,h2,h3,h4,a{
+  font-family: monospace;
+  text-transform: uppercase;
+}
+p{
+  font-family: monospace;
+}
+nav#nav-menu{
+  background-color: rgb(16, 69, 181);
+  border: 0;
+  border-radius: 0px;
+}
+footer#footer{
+  background-color: rgb(16, 69, 181);
+  color: #c5c0c0;
+}
+div#modules-container{
+  padding-bottom: 25px;
+}
+div#chat-container form textarea{
+  resize: none;
+  margin-bottom: 5px;
+}
+div#modules-container div.col-md-6,
+div#title-module h2,
+div#title-module h4{
+  margin-bottom: 15px;
+}
+div#modules-container div h2,
+div#chat-title,
+div#chat-container,
+div#title-module,
+div.slide,
+div.module-button,
+div.cmds{
+  text-align: center;
+}
+div.slide img{
+  width: 35%;
+  margin: 0 auto;
+}
+div.module-button div.col-md-12{
+  margin-bottom: 5px;
+}
+div.module-button a{
+  text-transform: initial;
+}
+a.logo{
+  color: #c5c0c0 !important;
+}
+ul.menu-ul li a{
+  color: #c5c0c0 !important;
+}
+img.module-img{
+  text-align:center;
+  margin:0 auto;
+  width:30%;
+  margin-bottom: 5px;
+}
+button.btn-primary{
+  margin-bottom: 5px;
+}
+nav.navbar{
+  margin-bottom: 0px;
+}

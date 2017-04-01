@@ -1,7 +1,15 @@
 $(function() {
   /* Sends to API Tarla the device and action */
 
+  $( "form" ).submit(function( event ) {
+  if ( $( "input:first" ).val() === "correct" ) {
+    $( "span" ).text( "Validated..." ).show();
+    return;
+  }
 
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  event.preventDefault();
+});
   /* Get modules from json and lists them */
   $.getJSON( "http://tarla.hackathongi.cat/devices", function( data ) {
     var devices = [];
@@ -19,7 +27,7 @@ $(function() {
       var device_name = i;
       devices[count].push("<div class=\"col-md-3\">\n<div class=\"module-button\">\n<div class=\"col-md-12\">\n<h3>"+i+"</h3>\n<a href=\"modules/"+i+".html\"><img class=\"img-responsive module-img\" src=\"img/"+i+".png\"/></a>\n<div class=\"cmds\">\n<div class=\"col-md-12\"><h4>Actions</h4>\n<div class=\"buttons-"+count+"\"></div></div>\n</div>\n<a class=\"btn btn-primary\" href=\"modules/"+i+".html\">More info</a></div>\n</div></div>");
       $.each( object.actions, function( i, object) {
-        actions[count].push("<button class=\"btn btn-primary action\" data-action=\""+i+"\" data-device=\""+device_name+"\" style=\"margin-right:2px;\">"+i+"</button>");;
+        actions[count].push("<button class=\"btn btn-primary action\" data-action=\""+i+"\" data-device=\""+device_name+"\">"+i+"</button>");;
         $.each(object.parameters, function(i, object){
           param[count].push(object);
           param_name[count].push(i);

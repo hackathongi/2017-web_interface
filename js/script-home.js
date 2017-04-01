@@ -3,7 +3,7 @@ $(function() {
 
 
   /* Get modules from json and lists them */
-  $.getJSON( "devices.json", function( data ) {
+  $.getJSON( "http://tarla.hackathongi.cat/devices", function( data ) {
     var devices = [];
     var actions = [];
     var count = 0;
@@ -17,8 +17,6 @@ $(function() {
       });
       count++;
     });
-    console.log(devices);
-    console.log(actions);
     $( "<div>", {
       "class": "my-new-list",
       html: devices.join( "" )
@@ -39,8 +37,6 @@ $(function() {
         console.log( data );
         alert( "Load was performed." );
       });
-
-      console.log(action + " " + device);
     });
 
 
